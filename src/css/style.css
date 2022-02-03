@@ -71,6 +71,12 @@ a:hover {
   color: #ff4655;
 }
 
+.second-nav {
+  height: 50px;
+  font-size: 0.8rem;
+  background-color: black;
+}
+
 .button {
   display: inline-block;
   text-decoration: none;
@@ -180,7 +186,7 @@ nav {
 }
 
 .hero {
-  min-width: calc(100vh - 100px);
+  min-height: calc(100vh - 150px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
