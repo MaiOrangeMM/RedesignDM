@@ -48,21 +48,6 @@ body {
 	color: $col-prime-red;
 }
 
-.section-h1 {
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: $col-light-black;
-	text-transform: uppercase;
-	font-size: 30vw;
-	font-weight: bold;
-	line-height: 1;
-	position: absolute;
-	z-index: -1;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: clip;
-}
-
 h1 {
 	font-size: clamp(2rem, 6vw, 3.5rem);
 	font-weight: bold;
@@ -72,6 +57,13 @@ h1 {
 p,
 h6 {
 	font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+h3 {
+	font-size: clamp(0.7rem, 3vw, 0.8rem);
+	font-style: italic;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 a {
@@ -208,11 +200,12 @@ nav {
 	max-width: 100vw;
 }
 
-section {
-	min-height: 100vh;
-	min-width: 100vw;
-	display: flex;
-	align-items: center;
+.row-hero {
+	padding: 80px 0;
+}
+
+.section-content {
+	padding: 10vh 0;
 }
 
 .hero-text {
@@ -224,8 +217,29 @@ section {
 // =============================
 
 @media (min-width: 1200px) {
+	.row-hero {
+		height: 100vh;
+		padding: 0;
+		padding-top: 80px;
+	}
+
+	.section-content {
+		padding: 20vh 0;
+	}
+
 	.section-h1 {
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: $col-light-black;
+		text-transform: uppercase;
 		font-size: 16vw;
+		font-weight: bold;
+		line-height: 1;
+		position: absolute;
+		z-index: -1;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
 	}
 
 	.section-social {
@@ -233,7 +247,7 @@ section {
 		bottom: 0;
 		right: 0;
 		width: 5vw;
-		height: calc(100vh - 100px);
+		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
